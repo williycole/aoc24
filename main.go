@@ -9,7 +9,9 @@ import (
 	"strings"
 
 	"main.go/d1"
-	puzzle "main.go/d1/puzzle-input"
+	d1puzzle "main.go/d1/puzzle-input"
+	"main.go/d2"
+	d2puzzle "main.go/d2/puzzle-input"
 )
 
 func main() {
@@ -28,14 +30,23 @@ func main() {
 	switch choice {
 	case 1:
 		fmt.Println("Test:")
-		d1.TotalDistance(puzzle.ListThree, puzzle.ListFour)
-		d1.TotalDistancePart2(puzzle.ListThree, puzzle.ListFour)
-
+		d1.TotalDistance(d1puzzle.ListThree, d1puzzle.ListFour)
+		d1.TotalDistancePart2(d1puzzle.ListThree, d1puzzle.ListFour)
+		fmt.Println("\n----------------------------")
 		fmt.Println("Answer:")
-		d1.TotalDistance(puzzle.ListOne, puzzle.ListTwo)
-		d1.TotalDistancePart2(puzzle.ListOne, puzzle.ListTwo)
+		d1.TotalDistance(d1puzzle.ListOne, d1puzzle.ListTwo)
+		d1.TotalDistancePart2(d1puzzle.ListOne, d1puzzle.ListTwo)
+		fmt.Println("\n============================")
 	case 2:
-		fmt.Println("Day 2: TODO")
+		// fmt.Println("Test:")
+		fmt.Println(d2puzzle.TestReports)
+		// d2.NumOfSafeReports(d2puzzle.TestReports)
+		d2.NumOfSafeReportsPart2(d2puzzle.TestReports)
+		fmt.Println("\n----------------------------")
+		fmt.Println("Answer:")
+		// d2.NumOfSafeReports(d2puzzle.Reports)
+		// d2.NumOfSafeReportsPart2(d2puzzle.Reports)
+		fmt.Println("\n============================")
 	case 3:
 		fmt.Println("Day 3: TODO")
 	case 4:

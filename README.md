@@ -1,1 +1,1 @@
-Just a repo for aoc 2024. 
+# Just a repo for aoc 2024. 
